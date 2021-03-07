@@ -8,6 +8,10 @@ function menuActive() {
 
     closeMenu.addEventListener('click', () => {
         sideBar.classList.remove('visible-menu')
+        menuToggle.classList.remove('x-animation')
+    })
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('x-animation')
     })
 }
 

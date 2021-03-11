@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #009541;
+}
+
+.form-wrapper {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+}
+
+.form-wrapper .logo {
+    width: 100px;
+    position: relative;
+}
+
+.form-wrapper .login-container {
+    margin-top: 50px !important;
+}
+
+.form-wrapper .login-container, .password-container {
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.form-wrapper .password-container input {
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.form-wrapper .password-container .show-password {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 350px;
+    padding: 10px 7px 10px 0px;
+    background-color: #fff;
+}
+
+.form-wrapper .login-container input {
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.form-wrapper .login-container .label-login {
+    position: absolute;
+    font-size: 1.3rem;
+    pointer-events: none;
+    margin-top: 10px;
+    transition: 0.2s ease all;
+}
+
+.form-wrapper .label-password {
+    position: absolute;
+    font-size: 1.3rem;
+    pointer-events: none;
+    margin-top: 10px;
+    transition: 0.2s ease all;
+}
+
+.login-container .login:focus ~ .label-login, .login-container .login:not(:focus):valid ~ .label-login {
+    position: absolute;
+    margin-top: 1px;
+    margin-right: 250px;
+    font-size: 0.8rem;
+}
+
+.password-container .password:focus ~ .label-password, .password-container .password:not(:focus):valid ~ .label-password {
+    position: absolute;
+    margin-top: 1px;
+    margin-right: 250px;
+    font-size: 0.8rem;
+}
+
+.form-wrapper .alternative-options {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-wrapper .alternative-options .login-option {
+    width: 125px;
+    height: 50px;
+    margin: 6px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.form-wrapper .alternative-options .facebook {
+    background: #1878f3;
+    color: #fff;
+}
+
+.form-wrapper .alternative-options .google {
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    color: black;
+}
+
+.form-wrapper .alternative-options .apple {
+    background-color: black;
+    color: white;
+}
+
+.form-wrapper .alternative-options .login-option i {
+    font-size: 1.5rem;
+}
+
+.form-wrapper button {
+    width: 400px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: green;
+    color: #ffff;
+    border-radius: 10px;
+}
+
+.form-wrapper .options-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px
+}
+
+.form-wrapper .options-links a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.banner {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-text .white-text:first-child {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.banner .banner-text .white-text {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.banner .banner-text .green-text {
+    color: rgb(48, 180, 48);
+    font-size: 9rem;
+}
+
+.banner .bicicleta {
+    position: absolute;
+    z-index: -1;
+    width: 60%;
+}
+
+@media (max-width: 720px) {
+    .form-wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-wrapper h1 {
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+
+    .form-wrapper .login-container input {
+        width: 80%;
+        height: 50px;
+        padding: 5px;
+        margin-bottom: 5px;
+        outline: none;
+        font-size: 1rem;
+    }
+
+    .form-wrapper .password-container input {
+        width: 80%;
+        height: 50px;
+        padding: 5px;
+        margin-bottom: 5px;
+        outline: none;
+        font-size: 1.5rem;
+    }
+
+    .form-wrapper .password-container .show-password {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 245px;
+        padding: 10px 7px 10px 0px;
+        background-color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .form-wrapper .login-container .label-login {
+        position: absolute;
+        font-size: 1.1rem;
+        pointer-events: none;
+        margin-top: 10px;
+        transition: 0.2s ease all;
+    }
+    
+    .form-wrapper .label-password {
+        position: absolute;
+        font-size: 1.1rem;
+        pointer-events: none;
+        margin-top: 10px;
+        transition: 0.2s ease all;
+    }
+    
+    .login-container .login:focus ~ .label-login, .login-container .login:not(:focus):valid ~ .label-login {
+        position: absolute;
+        margin-top: 1px;
+        margin-right: 140px;
+        font-size: 0.8rem;
+    }
+    
+    .password-container .password:focus ~ .label-password,  .password-container .password:not(:focus):valid ~ .label-password  {
+        position: absolute;
+        margin-top: 1px;
+        margin-right: 140px;
+        font-size: 0.8rem;
+    }
+
+    .form-wrapper .alternative-options .login-option {
+        width: 100px;
+        height: 40px;
+        margin: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .form-wrapper button {
+        width: 80%;
+        height: 50px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border: none;
+        background-color: green;
+    }
+
+    .form-wrapper .alternative-options {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .form-wrapper .options-links {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px
+    }
+
+    .banner {
+        display: none;
+    }
+}

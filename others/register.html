@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="../styles/register.css">
     <title>Futeboleiros | Registre-se</title>
 </head>
 <body>
-    
+    <a href="../index.html" class="come-back"><i class="fas fa-chevron-left"></i> Voltar</a>
+    <form action="" class="form-wrapper">
+        <img src="../src/logo.png" alt="">
+        <h1>Registre-se</h1>
+        <div class="input-container">
+            <input type="text" name="nome" class="nome">
+            <p class="label-nome">Digite o seu nome</p>
+
+            <input type="text" name="login" class="login">
+            <p class="label-login">Digite o seu login</p>
+
+            <input type="password" name="password" class="password">
+            <p class="label-password">Digite a sua senha</p>
+            <div class="show-password fas fa-eye-slash"></div>
+        </div>
+
+        <button type="submit" class="register">Registrar</button>
+        <button type="reset" class="reset">Cancelar</button>
+    </form>
+    <script src="../scripts/password.js"></script>
 </body>
 </html>
